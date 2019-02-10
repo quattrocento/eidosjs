@@ -68,7 +68,7 @@ describe("issue13", function() {
             signatures: []
         };
         return Apis.instance(
-            "wss://bitshares.openledger.info/ws",
+            "ws://dex.eidos.one:8000",
             true
         ).init_promise.then(() => {
             var b = ops.transaction.toBuffer(a);
