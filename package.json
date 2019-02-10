@@ -41,7 +41,7 @@
     "jsnext:main": "./es/index.js",
     "dependencies": {
         "bigi": "1.4.2",
-        "eidosjs-ws": "git+https://github.com/quattrocento/eidosjs-ws.git#6726977201608fbe9487803f212a6f026ffee195",
+        "eidosjs-ws": "./../eidosjs-ws",
         "bs58": "4.0.1",
         "bytebuffer": "5.0.1",
         "create-hash": "1.2.0",
