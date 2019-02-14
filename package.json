@@ -1,7 +1,7 @@
 {
     "name": "eidosjs",
     "version": "1.8.3",
-    "description": "Pure JavaScript Bitshares library for node.js and browsers.",
+    "description": "Pure JavaScript Eidos library for node.js and browsers.",
     "browser": {
         "ws": false,
         "crypto": false
@@ -20,7 +20,7 @@
         "postbuild": "npm run browserify && npm run build-es",
         "build:watch": "babel lib -d dist --watch",
         "prebrowserify": "mkdirp build",
-        "browserify": "cross-env NODE_ENV=production browserify --full-paths dist/browser.js --standalone bitshares_js -o build/eidosjs.js -d",
+        "browserify": "cross-env NODE_ENV=production browserify --full-paths dist/browser.js --standalone eidos_js -o build/eidosjs.js -d",
         "postbrowserify": "cross-env NODE_ENV=production uglifyjs --compress --mangle --sequences --drop_console --output build/eidosjs.min.js -- build/eidosjs.js",
         "precommit": "pretty-quick --staged && npm run test",
         "prepublish": "npm run build && npm run test"
